@@ -21,7 +21,18 @@ class _CurrencyConverterMaterialPage extends State<CurrencyConverterMaterialPage
   double result = 0;
   // ~ TextEditingController is a class which is used to control the text field.
   // ~ we use it to get the value from the text field.
-  final TextEditingController inputUSD = TextEditingController();
+  final TextEditingController inputUSDController = TextEditingController();
+
+
+  @override
+  void dispose() {
+    // ~ dispose is a method which is called when the stateful widget is removed from the widget tree.
+    // ~ we use it to dispose the controllers so that it doesn't take any memory after the widget is removed.
+    inputUSDController.dispose();
+    // ~ super.dispose() is used to call the dispose method of the parent class i.e State class.
+    super.dispose();
+  }
+
 
   @override
   // ~ BuildContext is a class which provides the location of the widget in the widget tree.
@@ -78,7 +89,7 @@ class _CurrencyConverterMaterialPage extends State<CurrencyConverterMaterialPage
               TextField(
                 // ~ controller is a property of TextField widget which is used to control the text field.
                 // ~ we use it to get the value from the text field.
-                controller: inputUSD,
+                controller: inputUSDController,
                 style: const TextStyle(
                   color: Colors.black,
                 ),
@@ -132,7 +143,7 @@ class _CurrencyConverterMaterialPage extends State<CurrencyConverterMaterialPage
                   // ~ we use it when we want to change the state of the widget.
                   // ~ It tells the widget tree or the element tree that the state of the widget has changed and it should be rebuilt.
                   setState(() {
-                    result = double.parse(inputUSD.text) * 81;
+                    result = double.parse(inputUSDController.text) * 81;
                   });
                 },
                 // ~ we can use ButtonStyle to add style to the button or we can use styleFrom().

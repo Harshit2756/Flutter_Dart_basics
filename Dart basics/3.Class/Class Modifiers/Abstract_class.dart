@@ -2,6 +2,9 @@ void main() {
   // abstract class
   // . abstract class is a class which can't be instantiated(means we can't create an object of it).
   // . abstract class is used to achieve abstraction.
+  // . we can't create an object of abstract class but we can create a reference of it.
+  // final myVehicle = Vehicle(); // error
+
   final myCar = car();
   myCar.accelerate();
 

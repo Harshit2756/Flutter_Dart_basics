@@ -64,11 +64,11 @@ class _WeatherScreenState extends State<WeatherScreen> {
         ],
       ),
       // ~ Body
-      //. FutureBuilder is a widget that builds itself based on the latest snapshot of interaction with a Future.
-      // . snapshot is the latest interaction with the asynchronous computation i.e. Future in our case.
+      //. FutureBuilder widget that is used to asynchronously(in different thread) build a widget tree based on the result of a Future.
+      // . snapshot stores the result of the future computation (asynchronous computation) .
       // . snapshot has two properties: data and error.
-      // . data is the latest data received by the asynchronous computation.
-      // . error is the latest error object received by the asynchronous computation.
+      // 1. data is the latest data received by the asynchronous computation.
+      // 2. error is the latest error object received by the asynchronous computation.
       // . builder is a function that builds the widget tree based on the latest snapshot of interaction with the asynchronous computation.
       body: FutureBuilder(
         future: getCurrentWeather(),
@@ -88,9 +88,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
           // - Data State
 
           final data = snapshot.data!;
-
           final currentWeatherData = data['list'][0];
-
           final currentTemp = currentWeatherData['main']['temp'];
           final currentSky = currentWeatherData['weather'][0]['main'];
           final iconUrl =
@@ -136,7 +134,6 @@ class _WeatherScreenState extends State<WeatherScreen> {
                               const SizedBox(height: 16),
 
                               // * Icon
-
                               Image.network(
                                 iconUrl,
                                 color: Colors.white,

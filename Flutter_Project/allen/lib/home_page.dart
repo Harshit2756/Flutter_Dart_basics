@@ -58,7 +58,6 @@ class _HomePageState extends State<HomePage> {
         centerTitle: true,
         leading: IconButton(
           icon: const Icon(Icons.menu),
-          // TODO: add onPressed callback to open the drawer
           onPressed: () {},
         ),
       ),

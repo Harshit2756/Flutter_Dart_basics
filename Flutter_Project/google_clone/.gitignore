@@ -44,4 +44,4 @@ app.*.map.json
 /android/app/release
 
 # hide key from git
-/lib/config/api_keys.dart
+/lib/config/api_keys.env

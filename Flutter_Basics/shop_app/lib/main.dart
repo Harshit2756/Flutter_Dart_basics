@@ -30,6 +30,7 @@ class MyApp extends StatelessWidget {
     // > will listen i.e rebuild the complete widget tree when the value changes.
     // > It is used inside a build method.
     // ! It build the complete widget tree when the value changes.
+    
     //- context.read<ChangeNotifier>() [Provider.of<ChangeNotifier>(context, listen: false)]
     // > will not listen i.e will not rebuild the complete widget tree when the value changes.
     // > It is used outside a build method.

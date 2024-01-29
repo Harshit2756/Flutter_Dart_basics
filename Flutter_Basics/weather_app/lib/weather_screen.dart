@@ -63,6 +63,7 @@ class _WeatherScreenState extends State<WeatherScreen> {
           ),
         ],
       ),
+      
       // ~ Body
       //. FutureBuilder widget that is used to asynchronously(in different thread) build a widget tree based on the result of a Future.
       // . snapshot stores the result of the future computation (asynchronous computation) .

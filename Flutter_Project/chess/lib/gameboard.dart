@@ -207,10 +207,10 @@ class _GameBoardState extends State<GameBoard> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),
-                  ElevatedButton(
-                    onPressed: resetGame,
-                    child: const Text('Reset'),
-                  ),
+                  // ElevatedButton(
+                  //   onPressed: resetGame,
+                  //   child: const Text('Reset'),
+                  // ),
                 ],
               ),
             ),

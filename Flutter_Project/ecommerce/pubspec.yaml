@@ -7,7 +7,7 @@ version: 1.0.0+1
 environment:
   sdk: ">=3.2.6 <4.0.0"
 
-#--------------- PACKAGES ------------------#
+# ----------------- PACKAGES ----------------- #
 dependencies:
   flutter:
     sdk: flutter
@@ -34,7 +34,7 @@ dependencies:
   flutter_rating_bar: ^4.0.1
   capped_progress_indicator: ^0.0.2
 
-  #--------------- ./ PACKAGES END ------------------#
+# --------------- ./ PACKAGES END --------------- #
 
 dev_dependencies:
   flutter_test:

@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import 'Provider_example_first/provider/count_provider.dart';
-import 'Provider_example_two/provider/slider_provider.dart';
-import 'Provider_example_two/screen/slider_screen.dart';
-import 'value_notify_lisner.dart';
+import '../Provider_example_first/provider/count_provider.dart';
+import 'provider/slider_provider.dart';
+import 'screen/slider_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +25,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: NotifyListenerScreen(),
+        home: const SliderScreen(),
       ),
     );
   }

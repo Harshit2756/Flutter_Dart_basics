@@ -10,11 +10,11 @@ import 'package:flutter/material.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  //- this vairiable gives error if final is not added
-  final int x = 0;
+  //- this vairiable gives error if final is not added and the constructor is const
+  final int x = 10;
   @override
   Widget build(BuildContext context) {
-    print("Build");
+    print("Build is called once.");
 
     return Scaffold(
       appBar: AppBar(
@@ -22,14 +22,32 @@ class HomeScreen extends StatelessWidget {
         title: const Center(child: Text('Provider Demo')),
       ),
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Container(
-            child: Text(
-              x.toString(),
-              style: TextStyle(fontSize: 20),
+            child: Center(
+              child: Text(
+                x.toString(),
+                style: TextStyle(fontSize: 50),
+              ),
             ),
-          )
+          ),
+          Padding(
+            padding: const EdgeInsets.all(15.0),
+            child: Text(
+              "On pressing the button x++ is done but not reflected on the screen as the widget is build once. \nTo update the value of x we need to use Stateful Widget.",
+              style: TextStyle(fontSize: 32),
+            ),
+          ),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          print("Floating Action Button");
+          // x++;
+          print(x.toString());
+        },
+        child: const Icon(Icons.add),
       ),
     );
   }

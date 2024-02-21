@@ -1,4 +1,4 @@
-// ignore_for_file: avoid_print, prefer_const_constructors, avoid_unnecessary_containers
+// ignore_for_file: avoid_print, file_names
 
 import 'package:flutter/material.dart';
 
@@ -24,16 +24,14 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Container(
-            child: Center(
-              child: Text(
-                x.toString(),
-                style: TextStyle(fontSize: 50),
-              ),
+          Center(
+            child: Text(
+              x.toString(),
+              style: const TextStyle(fontSize: 50),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(15.0),
+          const Padding(
+            padding: EdgeInsets.all(15.0),
             child: Text(
               "On pressing the button x++ is done but not reflected on the screen as the widget is build once. \nTo update the value of x we need to use Stateful Widget.",
               style: TextStyle(fontSize: 32),

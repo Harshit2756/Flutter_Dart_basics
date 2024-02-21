@@ -6,6 +6,10 @@ class OnBoardingController extends GetxController {
     return Get.find();
   }
 
+  final onBoardingControllerProvider = Provider<OnBoardingController>((ref) {
+    return OnBoardingController();
+  });
+
   /// Variable
   final pageController = PageController();
   final Rx<int> _currentPage = 0.obs;

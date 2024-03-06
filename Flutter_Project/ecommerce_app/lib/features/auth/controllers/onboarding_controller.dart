@@ -1,3 +1,5 @@
+import 'package:ecommerce_app/features/auth/screens/login/login.dart';
+import 'package:ecommerce_app/features/shop/screens/home/home.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -5,10 +7,6 @@ class OnBoardingController extends GetxController {
   static OnBoardingController get instance {
     return Get.find();
   }
-
-  final onBoardingControllerProvider = Provider<OnBoardingController>((ref) {
-    return OnBoardingController();
-  });
 
   /// Variable
   final pageController = PageController();
@@ -24,9 +22,9 @@ class OnBoardingController extends GetxController {
   }
 
   /// Update current page Index
-  void nextPage() {
+  void nextPage(BuildContext context) {
     if (_currentPage.value == 2) {
-      // Get.to(LoginScreen);
+      Get.offAll(const LoginScreen());
     } else {
       int page = _currentPage.value + 1;
       pageController.jumpToPage(page);
@@ -34,8 +32,8 @@ class OnBoardingController extends GetxController {
   }
 
   /// Update Current Index & Navigate to Last Page
-  void skipPage() {
+  void skipPage(BuildContext context) {
     _currentPage.value = 2;
-    pageController.jumpToPage(2);
+    Get.offAll(const LoginScreen());
   }
 }

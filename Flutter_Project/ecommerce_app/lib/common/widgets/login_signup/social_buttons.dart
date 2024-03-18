@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../utils/constants/colors.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
+import 'socail_floating_action_button.dart';
 
 class TSocialButtons extends StatelessWidget {
   const TSocialButtons({
@@ -14,40 +14,18 @@ class TSocialButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: TColors.grey,
-            ),
-            shape: BoxShape.circle,
-          ),
-          child: IconButton(
-            onPressed: () {},
-            icon: const Image(
-              height: TSizes.iconMd,
-              width: TSizes.iconMd,
-              image: AssetImage(TImages.google),
-            ),
-          ),
+        HFloatingActionButton(
+          onpressed: () {},
+          image: TImages.google,
         ),
         const SizedBox(width: TSizes.spaceBtwItems),
-        Container(
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: TColors.grey,
-            ),
-            shape: BoxShape.circle,
-          ),
-          child: IconButton(
-            onPressed: () {},
-            icon: const Image(
-              height: TSizes.iconMd,
-              width: TSizes.iconMd,
-              image: AssetImage(TImages.facebook),
-            ),
-          ),
+        HFloatingActionButton(
+          onpressed: () {},
+          image: TImages.facebook,
         ),
       ],
     );
   }
 }
+
+

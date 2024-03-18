@@ -21,7 +21,7 @@ class SessionController {
   }
 
   // saving data into shared preference
-  Future<void> saveUserInPreference(dynamic user) async {
+  Future<void> saveUserInPreference(UserModel user) async {
     sharedPreferenceClass.setValue('token', jsonEncode(user));
     //storing value to check login
     sharedPreferenceClass.setValue('isLogin', 'true');

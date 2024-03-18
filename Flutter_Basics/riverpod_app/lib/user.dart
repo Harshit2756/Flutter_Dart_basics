@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -63,12 +62,12 @@ class UserNotifier extends StateNotifier<User> {
     // state = User(name: newname, age: state.age);
     state = state.copyWith(name: newname);
   }
+
   void updateAge(int newage) {
     // state = User(name: state.newname, age: age);
     state = state.copyWith(age: newage);
   }
 }
-
 
 class UserNotifierChange extends ChangeNotifier {
   User user = const User(name: 'name', age: 0);
@@ -82,5 +81,4 @@ class UserNotifierChange extends ChangeNotifier {
     user = user.copyWith(age: newage);
     notifyListeners();
   }
-
 }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/constants/sizes.dart';
-import 'socail_floating_action_button.dart';
+import 'social_action_button.dart';
 
 class TSocialButtons extends StatelessWidget {
   const TSocialButtons({
@@ -14,12 +14,12 @@ class TSocialButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        HFloatingActionButton(
+        CircularSocialButton(
           onpressed: () {},
           image: TImages.google,
         ),
         const SizedBox(width: TSizes.spaceBtwItems),
-        HFloatingActionButton(
+        CircularSocialButton(
           onpressed: () {},
           image: TImages.facebook,
         ),
@@ -27,5 +27,3 @@ class TSocialButtons extends StatelessWidget {
     );
   }
 }
-
-

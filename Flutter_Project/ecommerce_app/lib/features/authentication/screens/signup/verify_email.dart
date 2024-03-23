@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store/common/widgets/success_screen/success_screen.dart';
-import 'package:t_store/features/auth/screens/login/login.dart';
+import 'package:t_store/features/authentication/screens/login/login.dart';
 import 'package:t_store/utils/constants/image_strings.dart';
 import 'package:t_store/utils/constants/sizes.dart';
 import 'package:t_store/utils/constants/text_strings.dart';

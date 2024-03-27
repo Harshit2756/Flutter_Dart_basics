@@ -10,16 +10,16 @@ class TElevatedButtonTheme {
   static final lightElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: TColors.light,
-      backgroundColor: TColors.primary,
-      disabledForegroundColor: TColors.darkGrey,
-      disabledBackgroundColor: TColors.buttonDisabled,
-      side: const BorderSide(color: TColors.primary),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
+      foregroundColor: HColors.light,
+      backgroundColor: HColors.primary,
+      disabledForegroundColor: HColors.darkGrey,
+      disabledBackgroundColor: HColors.buttonDisabled,
+      side: const BorderSide(color: HColors.primary),
+      padding: const EdgeInsets.symmetric(vertical: HSizes.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16, color: TColors.textWhite, fontWeight: FontWeight.w600),
+          fontSize: 16, color: HColors.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+          borderRadius: BorderRadius.circular(HSizes.buttonRadius)),
     ),
   );
 
@@ -27,16 +27,16 @@ class TElevatedButtonTheme {
   static final darkElevatedButtonTheme = ElevatedButtonThemeData(
     style: ElevatedButton.styleFrom(
       elevation: 0,
-      foregroundColor: TColors.light,
-      backgroundColor: TColors.primary,
-      disabledForegroundColor: TColors.darkGrey,
-      disabledBackgroundColor: TColors.darkerGrey,
-      side: const BorderSide(color: TColors.primary),
-      padding: const EdgeInsets.symmetric(vertical: TSizes.buttonHeight),
+      foregroundColor: HColors.light,
+      backgroundColor: HColors.primary,
+      disabledForegroundColor: HColors.darkGrey,
+      disabledBackgroundColor: HColors.darkerGrey,
+      side: const BorderSide(color: HColors.primary),
+      padding: const EdgeInsets.symmetric(vertical: HSizes.buttonHeight),
       textStyle: const TextStyle(
-          fontSize: 16, color: TColors.textWhite, fontWeight: FontWeight.w600),
+          fontSize: 16, color: HColors.textWhite, fontWeight: FontWeight.w600),
       shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(TSizes.buttonRadius)),
+          borderRadius: BorderRadius.circular(HSizes.buttonRadius)),
     ),
   );
 }

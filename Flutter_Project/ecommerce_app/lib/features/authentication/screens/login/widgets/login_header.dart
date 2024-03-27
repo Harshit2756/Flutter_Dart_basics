@@ -21,10 +21,10 @@ class TLoginHeader extends StatelessWidget {
           image:
               AssetImage(isDark ? TImages.darkAppLogo : TImages.lightAppLogo),
         ),
-        Text(TTexts.loginTitle,
+        Text(HTexts.loginTitle,
             style: Theme.of(context).textTheme.headlineMedium),
-        const SizedBox(height: TSizes.sm),
-        Text(TTexts.loginSubTitle,
+        const SizedBox(height: HSizes.sm),
+        Text(HTexts.loginSubTitle,
             style: Theme.of(context).textTheme.bodyMedium),
       ],
     );

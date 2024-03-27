@@ -29,7 +29,7 @@ class SuccessScreen extends StatelessWidget {
                 image,
                 width: THelperFunctions.screenWidth() * 0.6,
               ),
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: HSizes.spaceBtwSections),
 
               /// Title & Subtitle
               Text(
@@ -38,7 +38,7 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
 
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: HSizes.spaceBtwItems),
 
               Text(
                 subtitile,
@@ -46,14 +46,14 @@ class SuccessScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
 
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: HSizes.spaceBtwSections),
 
               /// Button
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: onPressed,
-                  child: const Text(TTexts.tContinue),
+                  child: const Text(HTexts.tContinue),
                 ),
               ),
             ],

@@ -10,17 +10,17 @@ class TCheckboxTheme {
   /// Customizable Light Text Theme
   static CheckboxThemeData lightCheckboxTheme = CheckboxThemeData(
     shape:
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.xs)),
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(HSizes.xs)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return TColors.white;
+        return HColors.white;
       } else {
-        return TColors.black;
+        return HColors.black;
       }
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return TColors.primary;
+        return HColors.primary;
       } else {
         return Colors.transparent;
       }
@@ -30,17 +30,17 @@ class TCheckboxTheme {
   /// Customizable Dark Text Theme
   static CheckboxThemeData darkCheckboxTheme = CheckboxThemeData(
     shape:
-        RoundedRectangleBorder(borderRadius: BorderRadius.circular(TSizes.xs)),
+        RoundedRectangleBorder(borderRadius: BorderRadius.circular(HSizes.xs)),
     checkColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return TColors.white;
+        return HColors.white;
       } else {
-        return TColors.black;
+        return HColors.black;
       }
     }),
     fillColor: MaterialStateProperty.resolveWith((states) {
       if (states.contains(MaterialState.selected)) {
-        return TColors.primary;
+        return HColors.primary;
       } else {
         return Colors.transparent;
       }

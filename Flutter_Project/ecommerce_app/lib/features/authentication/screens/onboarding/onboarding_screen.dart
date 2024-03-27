@@ -24,19 +24,19 @@ class OnBoardingScreen extends StatelessWidget {
             onPageChanged: controller.updatePageIncdicator,
             children: const [
               OnBoardingPage(
-                subTitle: TTexts.onBoardingSubTitle1,
+                subTitle: HTexts.onBoardingSubTitle1,
                 image: TImages.onBoardingImage1,
-                title: TTexts.onBoardingTitle1,
+                title: HTexts.onBoardingTitle1,
               ),
               OnBoardingPage(
-                subTitle: TTexts.onBoardingSubTitle2,
+                subTitle: HTexts.onBoardingSubTitle2,
                 image: TImages.onBoardingImage2,
-                title: TTexts.onBoardingTitle2,
+                title: HTexts.onBoardingTitle2,
               ),
               OnBoardingPage(
-                subTitle: TTexts.onBoardingSubTitle3,
+                subTitle: HTexts.onBoardingSubTitle3,
                 image: TImages.onBoardingImage3,
-                title: TTexts.onBoardingTitle3,
+                title: HTexts.onBoardingTitle3,
               ),
             ],
           ),

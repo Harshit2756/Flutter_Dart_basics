@@ -35,42 +35,42 @@ class ResetPassword extends StatelessWidget {
                 TImages.deliveredEmailIllustration,
                 width: THelperFunctions.screenWidth() * 0.6,
               ),
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: HSizes.spaceBtwSections),
 
               /// Title & Subtitle
               Text(
-                TTexts.changeYourPasswordTitle,
+                HTexts.changeYourPasswordTitle,
                 style: Theme.of(context).textTheme.headlineMedium,
                 textAlign: TextAlign.center,
               ),
 
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: HSizes.spaceBtwItems),
 
               Text(
-                TTexts.changeYourPasswordSubTitle,
+                HTexts.changeYourPasswordSubTitle,
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
 
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: HSizes.spaceBtwSections),
 
               /// Button
               SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
                   onPressed: () {},
-                  child: const Text(TTexts.tContinue),
+                  child: const Text(HTexts.tContinue),
                 ),
               ),
 
-              const SizedBox(height: TSizes.spaceBtwSections),
+              const SizedBox(height: HSizes.spaceBtwSections),
 
               SizedBox(
                 width: double.infinity,
                 child: TextButton(
                   onPressed: () {},
                   child: const Text(
-                    TTexts.resendEmail,
+                    HTexts.resendEmail,
                   ),
                 ),
               ),

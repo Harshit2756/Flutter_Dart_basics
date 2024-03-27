@@ -16,14 +16,14 @@ class CircularSocialButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        border: Border.all(color: TColors.grey),
+        border: Border.all(color: HColors.grey),
         borderRadius: BorderRadius.circular(100),
       ),
       child: IconButton(
         onPressed: onpressed,
         icon: Image(
-          height: TSizes.iconMd,
-          width: TSizes.iconMd,
+          height: HSizes.iconMd,
+          width: HSizes.iconMd,
           image: AssetImage(image),
         ),
       ),

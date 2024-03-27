@@ -18,7 +18,7 @@ class TSocialButtons extends StatelessWidget {
           onpressed: () {},
           image: TImages.google,
         ),
-        const SizedBox(width: TSizes.spaceBtwItems),
+        const SizedBox(width: HSizes.spaceBtwItems),
         CircularSocialButton(
           onpressed: () {},
           image: TImages.facebook,
